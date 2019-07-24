@@ -34,3 +34,4 @@ Tracks the progress of neural networks as they are training
   - After all subfolders have been evaluated:
     - Sleep for 1 hour
     - Restart
+  - Only one version of monitor.py should be run at any time, as it is designed to track mutiple networks
