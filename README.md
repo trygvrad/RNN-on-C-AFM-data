@@ -2,7 +2,7 @@
 Author: Trygve Magnus Ræder, trygvrad@gmail.com, under the guidance of Joshua C. Agar, joshagar@gmail.com
 # RNN-on-C-AFM-data
 
-Code for running a recurrent neural network on C-AFM (Conductive atomic force microscopy) data.
+Code for running a recurrent neural network on C-AFM (conductive atomic force microscopy) data.
 
 Tested with tensorflow 1.13.1 and keras 2.2.4
 
