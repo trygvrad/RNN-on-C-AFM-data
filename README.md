@@ -24,8 +24,8 @@ Runs the neural network.
   
 # 3 monitor.py
 Tracks the progress of neural networks as they are training
-  - Targets a folder and all subfolders
-  - for each subfolder:
+  - Targets a folder
+  - For each subfolder (recursive):
     - Visualize the most recent state of the network being trained
       - Read the most recent weights (.hdf5 file)
       - Also read the the start state of the network (.h5 file) to get the network geometery
