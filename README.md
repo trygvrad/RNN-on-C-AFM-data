@@ -9,7 +9,7 @@ The code is devided into three parts:
   2. runNN.py        - runs the neural net
   3. monitor.py      - visualizes the data after running the NN
   
-The code for the neural net itself is stored in \NN/__init__.py
+The code for the neural net itself is stored in NN/__init_\_.py
 
 # 1. prepare_data.py 
 Reads the XLS file containing the data
