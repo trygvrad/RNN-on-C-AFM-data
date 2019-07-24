@@ -24,13 +24,13 @@ Runs the neural network.
   
 # 3 monitor.py
 Tracks the progress of neural networks as they are training
-  - Reads the weights from trained neural networks and visualizes the data
-  - All subfolders in a directory are monitored
-  - Visualize the most recent state of the network being trained in each subfolder
-    - Read the most recent weights (.hdf5 file)
-    - Also read the the start state of the network (.h5 file) to get the network geometery
-    - Generates multiple plots that visualize the data in different ways
-    - (will pass if plots already exist)
+  - Targets a folder and all subfolders
+  - for each subfolder:
+    - Visualize the most recent state of the network being trained
+      - Read the most recent weights (.hdf5 file)
+      - Also read the the start state of the network (.h5 file) to get the network geometery
+      - Generates multiple plots that visualize the data in different ways
+      - (will pass if plots already exist)
   - After all subfolders have been evaluated:
     - Sleep for 1 hour
     - Restart
