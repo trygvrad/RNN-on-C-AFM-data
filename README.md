@@ -1,7 +1,7 @@
 # RNN-on-C-AFM-data
-# Tested with tensorflow 1.13.1 and keras 2.2.4
 
 Code for running a recurrent neural network on C-AFM data
+Tested with tensorflow 1.13.1 and keras 2.2.4
 
 # Overview
 The code is devided into three parts:
