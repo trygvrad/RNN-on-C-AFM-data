@@ -550,18 +550,21 @@ def reset_keras():
     sess = get_session()
     #gc.collect()
 
-#################### this section contains the configuration that is run when monitor.py is run
-# set what graphics card to use
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
-# set to allow dynamic allocation of memory
-config = tf.ConfigProto()
-config.gpu_options.allow_growth = True
-session = tf.Session(config=config)
-#the config for the monitor
-path = 'models'
-data = np.load('prosessedY.npy')
-xax = np.load('prosessedX.npy')
-std = np.load('std.npy')
-mean = np.load('mean.npy')
 #run the monitor
-monitor(path, data, xax, std, mean, sleeptime=3600)
+def main():
+    if __name__== "__main__" :
+        #################### this section contains the configuration that is run when monitor.py is run as a script
+        # set what graphics card to use
+        os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+        # set to allow dynamic allocation of memory
+        config = tf.ConfigProto()
+        config.gpu_options.allow_growth = True
+        session = tf.Session(config=config)
+        #the config for the monitor
+        path = 'models'
+        data = np.load('prosessedY.npy')
+        xax = np.load('prosessedX.npy')
+        std = np.load('std.npy')
+        mean = np.load('mean.npy')
+        monitor(path, data, xax, std, mean, sleeptime=3600)
+main()

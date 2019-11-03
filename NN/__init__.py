@@ -305,6 +305,7 @@ class NN():
             folder = 'models/'+self.id+'/'+trainid+'_'+timestring+'/'
         if not os.path.isdir(folder):
             os.makedirs(folder)
+        self.folder=folder
         # write a log file with the training parameters
         with open(folder+'model settings and history', 'w') as file:
             if self.loaded == False:
